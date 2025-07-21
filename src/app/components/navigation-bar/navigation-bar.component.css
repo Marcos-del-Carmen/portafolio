@@ -6,5 +6,6 @@
 }
 
 .item {
+    cursor: pointer;
     color: var(--light-color);
 }

@@ -1,6 +1,5 @@
 <div class="container d-flex justify-content-center gap-5 p-2">
     @for (item of itemsNavigations; track $index) {
-        <div class="item">{{item.name}}</div>
+        <div class="item" (click)="navigateTo(item.link)">{{item.name}}</div>
     }
 </div>
-<app-notes [blnButtom]="blnButtom" [message]="message"></app-notes>

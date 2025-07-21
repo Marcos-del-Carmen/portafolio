@@ -1,0 +1,10 @@
+.container {
+    position: fixed;
+    bottom: 0px;
+    background: #7575758c;
+    min-width: 100%;
+}
+
+.item {
+    color: var(--light-color);
+}

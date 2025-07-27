@@ -30,3 +30,9 @@
 .text-center {
     text-align: center;
 }
+
+.position-right-bottom {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}

@@ -29,4 +29,8 @@ export class WelcomeComponent implements OnInit {
     this.apps.push(...AppItems.Coruses);
     return this.apps;
   }
+
+  toggleNotas() {
+    this.blnButtom = !this.blnButtom;
+  }
 }

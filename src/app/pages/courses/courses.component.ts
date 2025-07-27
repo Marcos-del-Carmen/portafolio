@@ -12,4 +12,8 @@ import { NotesComponent } from '../../components/notes/notes.component';
 export class CoursesComponent {
   public blnButtom: boolean = true;
   public message: string = 'Algunos de los cursos que he tomado para mejorar mis habilidades como desarrollador web.';
+
+  toggleNotas() {
+    this.blnButtom = !this.blnButtom;
+  }
 }

@@ -12,4 +12,7 @@ import { NotesComponent } from '../../components/notes/notes.component';
 export class ToolsComponent {
   public blnButtom: boolean = true;
   public message: string = 'Estas son las herramientas que utilizo en mi día a día como desarrollador web y algunas que use por un tiempo.';
+  toggleNotas() {
+    this.blnButtom = !this.blnButtom;
+  }
 }

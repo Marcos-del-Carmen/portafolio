@@ -11,5 +11,9 @@ import { ContAppsComponent } from '../../components/cont-apps/cont-apps.componen
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-
+  public blnButtom : boolean = true;
+  
+  toggleNotas() {
+    this.blnButtom = !this.blnButtom;
+  }
 }

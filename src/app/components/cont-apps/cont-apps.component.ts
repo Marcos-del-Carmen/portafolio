@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import type { DetailApp } from '../../models/DetailApp.models';
+import { query } from 'express';
 
 @Component({
   selector: 'app-cont-apps',
@@ -8,9 +11,15 @@ import { Component, Input } from '@angular/core';
   styleUrl: './cont-apps.component.css'
 })
 export class ContAppsComponent {
-  @Input() itemsApp: any[] = [];
+  @Input() itemsApp: DetailApp[] = [];
 
-  constructor() {
-    console.log('cont apps:', this.itemsApp);
+  constructor(
+    private router: Router
+  ) { }
+
+  navigateApp(item: DetailApp) {
+    this.router.navigate([`${item.category}/${item.name}`],
+      { state: { item } }
+    );
   }
 }

@@ -11,5 +11,5 @@ export class NotesComponent {
   @Input() message: string | undefined;
 
   constructor() {}
-
+  
 }
